@@ -8,7 +8,7 @@ df_input <- read_csv(
   col_types = cols(patient_id = col_integer(),ageVar = col_double())
 )
 
-plot_age <- ggplot(data=df_input, aes(df_input$ageVar)) + 
+plot_age <- ggplot(data=df_input, aes(x=df_input$ageVar, fill=sex)) + 
     geom_histogram() +
     labs(title = "Age Distribution",
     x = "Age (years)")
