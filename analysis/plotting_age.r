@@ -18,13 +18,13 @@ ggsave(
   filename="descriptive.png", path=here::here("output"),
 )
 
-#plot_age_region <- ggplot(data=df_input, aes(x=df_input$ageVar, fill=region)) +
-#    geom_histogram() + 
-#    stat_bin(binwidth=NULL)+
-#    labs(title = "Age Distribution", 
-#    x = "Age (years)")
+plot_age_region <- ggplot(data=df_input, aes(x=df_input$ageVar, fill=region)) +
+    geom_histogram() + 
+    stat_bin(binwidth=NULL)+
+    labs(title = "Age Distribution", 
+    x = "Age (years)")
 
-#ggsave(
-#  plot= plot_age_region,
-#  filename="descriptive_region.png", path=here::here("output"),
-#)
+ggsave(
+  plot= plot_age_region,
+  filename="descriptive_region.png", path=here::here("output"),
+)
