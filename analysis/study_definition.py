@@ -11,7 +11,7 @@ study = StudyDefinition(
         "2019-01-01", "2023-01-01"
     ),
     
-    age=patients.age_as_of(
+    ageVar=patients.age_as_of(
         "2023-01-01",
         return_expectations={
             "rate": "universal",
