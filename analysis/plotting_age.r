@@ -20,7 +20,7 @@ ggsave(
 
 plot_age_region <- ggplot(data=df_input, aes(x=df_input$ageVar, fill=region)) +
     geom_histogram() + 
-    stat_bin(binwidth=NULL)+
+    #stat_bin(binwidth=NULL)+
     labs(title = "Age Distribution", 
     x = "Age (years)")
 
