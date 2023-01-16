@@ -17,3 +17,4 @@ actions:
     outputs:
       moderately_sensitive:
         plot1: output/descriptive.png
+        #plot2: output/descriptive_region.png
