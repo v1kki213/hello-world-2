@@ -11,7 +11,7 @@ actions:
       highly_sensitive:
         cohort: output/input.csv
   
-  describe:
+  describe_plot_age_distribution:
     run: r:latest analysis/plotting_age.r
     needs: [generate_study_population]
     outputs:
