@@ -18,3 +18,10 @@ actions:
       moderately_sensitive:
         plot1: output/descriptive.png
         plot2: output/descriptive_region.png
+
+  describe_table_eth_sex:
+    run: r:latest analysis/table_ethnicity_by_sex.r
+    needs: [generate_study_population]
+    outputs:
+      moderately_sensitive:
+        tab1: output/tab_ethSex.csv
