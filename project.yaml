@@ -10,6 +10,12 @@ actions:
     outputs:
       highly_sensitive:
         cohort: output/input.csv
+
+  generate_study_pop_females:
+    run: cohortextractor:latest generate_cohort --study-definition study_definition_females
+    outputs:
+      highly_sensitive:
+        cohort: output/input_females.csv
   
   describe_plot_age_distribution:
     run: r:latest analysis/plotting_age.r
